@@ -1,0 +1,492 @@
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 250px; 
+  }
+  
+  .page-title {
+    font-weight: 600;
+    color: var(--primary);
+  }
+  
+  /* Modal Form */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+  }
+  
+  .modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal-content {
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1051;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header h5 {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #6c757d;
+  }
+  
+  .modal-body {
+    padding: 1.5rem;
+  }
+  
+  .modal-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .input-group-text {
+    background-color: #f8f9fa;
+  }
+  
+  /* Animations */
+  .spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 0;
+      padding-top: 70px;
+    }
+    
+    .modal-content {
+      width: 95%;
+    }
+  }
+
+ /* ConfirmationModal.css */
+.modal-backdrop {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+  }
+  
+  .modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    z-index: 1001;
+  }
+  
+  .modal-content {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    display: flex;
+    padding: 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .icon-container {
+    margin-right: 15px;
+  }
+  
+  .icon-modal {
+    color: #ffc107;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+  
+  .title-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212529;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6c757d;
+    transition: color 0.2s;
+  }
+  
+  .close-btn:hover {
+    color: #495057;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .message {
+    margin: 0;
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.5;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 16px 20px;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .cancel-btn, .confirm-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+  }
+  
+  .cancel-btn {
+    background-color: #f8f9fa;
+    color: #495057;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e9ecef;
+  }
+  
+  .confirm-btn {
+    color: white;
+  }
+  
+  .confirm-btn.primary {
+    background-color: #0d6efd;
+  }
+  
+  .confirm-btn.primary:hover {
+    background-color: #0b5ed7;
+  }
+  
+  .confirm-btn.danger {
+    background-color: #dc3545;
+  }
+  
+  .confirm-btn.danger:hover {
+    background-color: #bb2d3b;
+  }
+  
+  /* Animations */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .modal-container {
+      width: 95%;
+    }
+    
+    .modal-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .icon-container {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+    
+    .modal-footer {
+      flex-direction: column-reverse;
+      gap: 8px;
+    }
+    
+    .cancel-btn, .confirm-btn {
+      width: 100%;
+    }
+  }
+
+
+/* TransactionForm.css */
+.transaction-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+  }
+  
+  .transaction-form-modal {
+    position: relative;
+    background: white;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 1001;
+    padding: 2rem;
+  }
+  
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: #718096;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .close-button:hover {
+    color: #4a5568;
+    background-color: #f7fafc;
+  }
+  
+  .transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-field.full-width {
+    grid-column: span 2;
+  }
+  
+  .field-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+  }
+  
+  .field-icon {
+    color: #718096;
+  }
+  
+  .field-input, .field-textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    transition: all 0.2s;
+    background-color: #f8fafc;
+  }
+  
+  .field-input:focus, .field-textarea:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+  }
+  
+  .field-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .has-error .field-input, .has-error .field-textarea {
+    border-color: #f56565;
+  }
+  
+  .has-error .field-input:focus, .has-error .field-textarea:focus {
+    box-shadow: 0 0 0 3px rgba(245, 101, 101, 0.2);
+  }
+  
+  .error-message {
+    color: #f56565;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .cancel-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f7fafc;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #edf2f7;
+  }
+  
+  .submit-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #3182ce;
+  }
+  
+  .submit-button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+  }
+  
+  .loading-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .transaction-form-modal {
+      width: 95%;
+      padding: 1.5rem;
+    }
+    
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .form-field.full-width {
+      grid-column: span 1;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+    }
+    
+    .cancel-button, .submit-button {
+      width: 100%;
+    }
+  }
+  
+  /* Animation */
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  .loading-text::after {
+    content: '...';
+    animation: pulse 1.5s infinite;
+  }

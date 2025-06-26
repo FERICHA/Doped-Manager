@@ -1,0 +1,218 @@
+/* Settings Page */
+.settings-container {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .settings-sidebar {
+    width: 250px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .settings-content {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .settings-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .settings-menu li {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+  }
+  
+  .settings-menu li:hover {
+    background: #e9ecef;
+  }
+  
+  .settings-menu li.active {
+    background: #667eea;
+    color: white;
+  }
+  
+  /* Profile */
+  .profile-container {
+    max-width: 800px;
+  }
+  
+  .profile-view {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .edit-btn, .add-user-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  /* User Management */
+  .user-management {
+    width: 100%;
+  }
+  
+  .users-table {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .users-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .users-table th, .users-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .users-table th {
+    background: #f8f9fa;
+  }
+  
+  .edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+  }
+  
+  .edit-btn {
+    color: #667eea;
+  }
+  
+  .delete-btn {
+    color: #e53e3e;
+  }
+  
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .user-form-modal {
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1001;
+    position: relative;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .error-message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  
+  .error {
+    border-color: #e53e3e !important;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  /* profil user */
+  .bg-btn {
+    background-color: #667eea;
+    color: white;
+  }
+  .bg-btn:hover {
+    background-color: #667eea;
+    color: white;
+  }
+  .bg-headBar {
+    background-color: #667eea;
+    color: white;
+  }
+  .text-purple {
+    color: #667eea;
+  }
+
+  
