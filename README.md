@@ -82,4 +82,6 @@ SECRET_KEY=YourSecretKey
 
 - 🔗 GitHub : 
 https://github.com/FERICHA/Doped-Manager
-- 🐳 Docker Hub :
+- 🐳 Docker Hub Server : https://hub.docker.com/r/ferichahoussam/projet-pfe-server  
+- 🐳 Docker Hub Client : https://hub.docker.com/r/ferichahoussam/projet-pfe-client
+
